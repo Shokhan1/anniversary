@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>70 жылдық мерейтой</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Переключатель языка -->
+<div class="lang-switch">
+    <button onclick="setLang('kk')">ҚАЗ</button>
+    <button onclick="setLang('ru')">РУС</button>
+</div>
+
+<section class="hero reveal">
+    <div class="card">
+        <img src="assets/grandma.jpg" class="avatar">
+
+        <h1 data-kk="Құрметті мерейтой қонақтары!"
+            data-ru="Дорогие гости!">
+        </h1>
+
+        <p class="subtitle"
+            data-kk="Сіздерді аяулы әжеміздің"
+            data-ru="Приглашаем вас на">
+        </p>
+
+        <h2 class="name"
+            data-kk="70 жылдық мерейтойына"
+            data-ru="70-летний юбилей нашей бабушки">
+        </h2>
+
+        <p class="text"
+            data-kk="арналған салтанатты дастарханымыздың қадірлі қонағы болуға шақырамыз."
+            data-ru="и будем рады видеть вас за праздничным дастарханом.">
+        </p>
+
+        <div class="date-box">
+            <span data-kk="Мамыр" data-ru="Май"></span><br>
+            <strong>7</strong><br>
+            <span>2026 • 18:00</span>
+        </div>
+
+        <p class="place"
+            data-kk="Отбасылық мереке"
+            data-ru="Семейное торжество">
+        </p>
+    </div>
+</section>
+
+<section class="info reveal">
+    <h3 data-kk="Мерейтой туралы"
+        data-ru="О юбилее">
+    </h3>
+
+    <p data-kk="Мерейтой иесі: Аяулы Әжеміз"
+        data-ru="Именинница: Наша любимая бабушка">
+    </p>
+
+    <p data-kk="Күні: 07.05.2026 / 18:00"
+        data-ru="Дата: 07.05.2026 / 18:00">
+    </p>
+
+    <div id="timer" class="timer"></div>
+</section>
+
+<section class="event-date reveal">
+    <div class="date-frame">
+        <div class="date-top"
+            data-kk="МЕРЕЙТОЙ КҮНІ"
+            data-ru="ДЕНЬ ЮБИЛЕЯ">
+        </div>
+
+        <div class="date-center">
+            <span class="month" data-kk="мамыр" data-ru="май"></span>
+            <span class="day">7</span>
+            <span class="year">2026</span>
+        </div>
+
+        <div class="date-bottom">
+            <span data-kk="Жасы" data-ru="Возраст"></span>
+            <strong>70</strong>
+        </div>
+    </div>
+</section>
+
+<button class="music-btn" onclick="toggleMusic()">🎵</button>
+<audio id="music" src="assets/music.mp3" loop></audio>
+
+<div id="petals"></div>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background: linear-gradient(#fff, #faf6ee);
+    color: #2c2c2c;
+    text-align: center;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+/* Переключатель языка */
+.lang-switch {
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 100;
+}
+
+.lang-switch button {
+    border: none;
+    background: #c8a23a;
+    color: white;
+    padding: 6px 10px;
+    margin-left: 4px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+/* reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: 1s ease;
+}
+.reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* карточка */
+.card {
+    background: white;
+    padding: 40px 28px;
+    border-radius: 26px;
+    max-width: 400px;
+    margin: auto;
+    box-shadow: 0 20px 40px rgba(0,0,0,.12);
+}
+
+.avatar {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #c8a23a;
+    margin-bottom: 15px;
+}
+
+h1, h2 { color: #8b6b2e; }
+.name { color: #c8a23a; }
+
+.date-box strong {
+    font-size: 38px;
+    color: #c8a23a;
+}
+
+.timer {
+    font-size: 18px;
+    margin-top: 20px;
+    color: #8b6b2e;
+}
+
+/* музыка */
+.music-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #c8a23a;
+    color: white;
+    border: none;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* лепестки */
+#petals span {
+    position: fixed;
+    top: -10px;
+    animation: fall linear infinite;
+    opacity: .5;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(110vh) rotate(360deg);
+    }
+}
